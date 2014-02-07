@@ -1,0 +1,4 @@
+name: DartOfLife
+description: Game of Life in Dart
+dependencies:
+  browser: any

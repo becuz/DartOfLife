@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dart of Life</title>
+    <link rel="stylesheet" href="cellautomation.css">
+  </head>
+  <body>
+    <h1 class="center">Dart of Life</h1>
+    <br/>
+    
+    <form class="center">
+        Cells side: <input id="slider" type="range" max="150" value="25"/>
+        <p id="run" class="button">Reset</p>
+        <p id="random" class="button">Random</p>
+        <p id="step" class="button">Step</p>
+        <p id="loop" class="button">Loop</p>
+    </form>
+    <br/>
+    
+    <canvas id="canvas" width="600" height="600" class="center"></canvas>
+    <br/>
+    
+    <p class="center" id="notes"> </p>
+    
+    <script type="application/dart" src="cellautomation.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

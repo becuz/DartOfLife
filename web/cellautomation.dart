@@ -125,17 +125,17 @@ void step(){
  */
 void toggleLoop(){
   isLooping = !isLooping;
-  if (isLooping) doLoop(null);
+  if (isLooping) doLoop();
 }
 
 /**
  * Loop the game
  */
-void doLoop(num delta){
+void doLoop(){
   step();
   if (isLooping) {
     int s = MAX_SPEED - speed;
-    new Future.delayed(new Duration(milliseconds: s), ()=>window.animationFrame.then(doLoop));
+    new Future.delayed(new Duration(milliseconds: s), ()=>doLoop());
   }
 }
 
